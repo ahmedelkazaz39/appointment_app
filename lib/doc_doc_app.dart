@@ -3,6 +3,9 @@ import 'package:appointment_app/features/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'core/routing/routes.dart';
+import 'core/theme/colors.dart';
+
 class DocDocApp extends StatelessWidget {
   final AppRouter appRouter;
   const DocDocApp({super.key, required this.appRouter});
@@ -18,10 +21,10 @@ class DocDocApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'First Method',
         theme: ThemeData(
-          primaryColor: Colors.blue,
-          textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
+          primaryColor: ColorsManager.primaryColorBlue,
+          scaffoldBackgroundColor: Colors.white,
         ),
-        home: const OnboardingScreen(),
+        initialRoute: Routes.onboardingScreen,
       ),
     );
   }

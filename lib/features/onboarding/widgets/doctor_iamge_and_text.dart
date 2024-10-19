@@ -28,15 +28,15 @@ class DoctorImageAndText extends StatelessWidget {
             child: Image.asset(ImageManager.doctorImage),
           ),
           Positioned(
-            bottom: 30.h,
+            bottom: 0.h,
             left: 0,
             right: 0,
             child: Text(
               'Best Doctor\nAppointment App',
               textAlign: TextAlign.center,
               style: TextStyles.font32BoldBlue.copyWith(
-                height: 1.4.h,
-              ),
+                  // height: 1.4.h,
+                  ),
             ),
           )
         ],

@@ -1,5 +1,6 @@
 import 'package:appointment_app/core/routing/app_route.dart';
 import 'package:appointment_app/features/onboarding/onboarding_screen.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,6 +19,7 @@ class DocDocApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
+        builder: DevicePreview.appBuilder,
         debugShowCheckedModeBanner: false,
         title: 'First Method',
         theme: ThemeData(

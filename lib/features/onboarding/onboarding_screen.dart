@@ -20,6 +20,7 @@ class OnboardingScreen extends StatelessWidget {
             horizontal: 30.w,
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const DocLogoAndName(),
               SizedBox(
@@ -28,6 +29,9 @@ class OnboardingScreen extends StatelessWidget {
               const DoctorImageAndText(),
               Column(
                 children: [
+                  SizedBox(
+                    height: 16.h,
+                  ),
                   Text(
                     'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
                     style: TextStyles.font12RegularGrey,
